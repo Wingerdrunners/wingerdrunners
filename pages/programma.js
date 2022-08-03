@@ -31,60 +31,7 @@ export default function programma() {
         <tr className = "text-yellow-800 bg-transparent animate-bounce md:text-2xl " >   
                                 
                            
-                                <td>2022/05/01</td>
-                                <td>Aardschoten</td>
-                                <td>Lia</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/05/08</td>
-                                <td>Loopark</td>
-                                <td>Cita</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/05/15</td>
-                                <td>Het Leesten</td>
-                                <td>Jacques</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/05/22</td>
-                           w     <td>Het Loopark</td>
-                                <td>Jeroen</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/05/29</td>
-                                <td>Wenum-Wiesel</td>
-                                <td>Linda</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/06/05</td>
-                                <td> Hoog-Soeren</td>
-                                <td>Peter</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/06/12</td>
-                                <td>Loenen</td>
-                                <td>Henk</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/06/19</td>
-                                <td>Orderbos</td>
-                                <td>Cita</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/06/26</td>
-                                <td>Echoput</td>
-                                <td>Hans</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/07/03</td>
-                                <td>Loopark</td>
-                                <td>Esmeralda</td>
-                            </tr>
-                            <tr className="bg-transparent">
-                                <td>2022/07/10</td>
-                                <td>Aardschoten</td>
-                                <td>Ton</td>
-                            </tr>
+                              
                             <tr className="bg-transparent">
                                 <td>2022/07/17</td>
                                 <td>Wenum-Wiesel</td>
@@ -94,7 +41,7 @@ export default function programma() {
                                 <td>2022/07/24</td>
                                 <td>Hoog-Soeren</td>
                                 <td>Jacques</td>
-                            </tr>
+de                            </tr>
                             <tr className="bg-transparent">
                                 <td>2022/07/31</td>
                                 <td>Loenen</td>

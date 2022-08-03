@@ -1,0 +1,686 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Wingerdrunners</title>
+    <link href="/src/css/tafel.css" rel="stylesheet" />
+    <script src="/src/js/gallery.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="/src/css/gallery.css" rel="stylesheet" />
+    <link href="/src/css/gallery-keyframes-swing.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    
+    
+
+<body
+    class="antialiased text-gray-500 min-w-[320px] bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-200 hover:to-green-200">
+    <header>
+        <nav
+            class="fixed z-10 flex flex-wrap items-center justify-between w-full p-1 shadow-lg bg-yellow-50 bg-opacity-90 g-white">
+            <div class="flex items-center mr-6 text-white flex-no-shrink" x-data>
+                <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+                    <span class="mx-auto text-3xl text-yellow-700 md:text-4xl " <i> DE WINGERDRUNNERS</i></span>
+                </a>
+            </div>
+
+            <div class="block lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border border-gray-800 rounded text-grey hover:text-white hover:border-white">
+                    <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex-grow hidden w-full pt-6 mb-4 lg:flex lg:items-center lg:w-auto lg:pt-0" id="nav-content">
+                <ul class="items-center justify-end flex-1 list-reset lg:flex">
+                    <li class="mr-3">
+                        <a class="opmaak " href="#home">Home</a>
+                    </li>
+                   <li class="mr-3">
+                        <a class="opmaak " href="#gedichten">Gedichten</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="opmaak " href="#programma">Programma</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="opmaak hover:text-blue-600 hover:text-underline focus:ring-2 focus:ring-blue-600"
+                            href="#laatstenieuws">Laatste Nieuwtjess</a>
+                    </li>
+
+                    <li class="mr-3">
+                        <a class="opmaak hover:text-blue-600 hover:text-underline focus:ring-2 focus:ring-blue-600"
+                            href="#multimedia">Multimedia</a>
+                    </li>
+                    <script>
+                        //Javascript to toggle the menu
+                        document.getElementById('nav-toggle').onclick = function () {
+                            document.getElementById("nav-content").classList.toggle("hidden");
+                        }
+                    </script>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home">
+        <div class="flex flex-col justify-center py-4 sm:py-24">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto md: max-w-max ">
+                <div
+                    class="absolute inset-0 transform -skew-y-6 shadow-lg bg-gradient-to-r from-yellow-100 to-red-700 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                </div>
+                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                    <div class="max-w-md mx-auto">
+                        <div>
+                            <img src="/img/img/brandje.jpg" class="h-9 sm:h-8"
+                                x-intersect="$el.classList.add('fadeInUp')" />
+                        </div>
+
+                        <img class="mx-auto border-8 border-red-700 rounded-lg img-fluid"
+                            x-intersect="$el.classList.add('fadeInUp')" src="/img/home.jpg" alt="een nieuw begin">
+                        <h1 class="text-2xl md:text-thin md:text-4xl">DE WINGERDRUNNERS</h1>
+
+                        <p
+                            class="mb-8 font-mono leading-relaxed text-gray-900 bg-yellow-100 first-letter:text-red-700 first-letter:font-thin first-letter:text-7xl md:text-3xl ">
+                            Wij zijn een
+                            groep lopers uit Apeldoorn, ontstaan uit een initiatief van enkele
+                            leerkrachten en ouders van Basisschool “De Wingerd” in 1993 om voor
+                            een goed doel mee te doen aan de Croon 24 uurloop te Apeldoorn. Het
+                            doel werd bereikt, de groep bleef bestaan en inmiddels vierden we in
+                            2003 ons 10-jarig jubileum en in 2008 ons 15-jarig jubileum.
+                            Een van de hoofddoelen van de huidige “selectie” is koffie en was
+                            veel koek.
+                            Op zondagochtend wordt er eerst nog wat gelopen of gewandeld of
+                            gefietst.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="gedichten">
+        <div
+            class="pt-32 overflow-hidden border-4 border-yellow-200 rounded-lg shadow-lg md:border-8 text-gray-50 bg-gradient-to-r from-amber-500 via-yellow-600 to-orange-300">
+            <div class="w-2/3 max-w-sm p-4 mx-auto bg-red-600 border rounded-md shadow border-light-blue-700">
+                <div class="flex animate-pulse ">
+                    <div class="w-12 h-12 bg-yellow-200 rounded-full"></div>
+                    <div class="flex-1 py-1 space-y-4">
+                    </div>
+                    <div class="font-medium text-white title-font sm:text-3xl"> VAN ONZE HUISDICHTER</div>
+                </div>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+
+                <div class="overflow-hidden border-4 border-yellow-200 rounded-lg shadow-lg md:border-8">
+                    <img class="object-cover object-center w-full p-1 lg:h-64 md:h-48 rounded-3xl"
+                        src="/img/gedichten/aanloop.jpg" alt="aanloop">
+                    <div class="p-1">
+                        <h5
+                            class="font-serif font-thin text-center text-red-800 bg-yellow-200 rounded-sm title-font md:text-3xl">
+                            AANLOOP</h5>
+                        <p class="leading-relaxed b-3 ">
+                        <h6 class=" first-letter:text-white first-letter:font-bold first-letter:text-7xl md:text-2xl">
+                           <p> Eindig wijds is het zicht</p>
+
+<p>In aanloop naar een bijzonder evenement</p>
+
+<p>zijn er zoveel sentimenten bekend.</p><br>
+
+<p>Er kan sprake zijn van euforie en overmoed</p>
+
+<p>tot gesloopt zijn en zeggen het goed niet goed.</p><br>
+
+<p>Daartussen in een legio aan gedachten</p>
+
+<p>waarmee mensen aan de start staan te wachten.</p><br>
+<p>
+Uiteindelijk zal het lopen zelf de uitslag geven</p>
+
+<p>met een tijd waar elk sentiment mee kan leven.</p><br>
+
+<p>Nog een snel weekje te gaan</p>
+
+<p>en we zien ons in een startvak staan.</p><br>
+
+<p></p>Om vervolgens met energie te gaan beginnen
+
+<p>met een route die het wel of niet gaat winnen.</p><br>
+
+<p>Dan naderhand weer te kunnen verklaren</p>
+
+<p>waar de tijd aan lag; aan het weer, de temperatuur of de blaren.</p><br>
+
+
+                            <h2
+                                className="mb-1 text-xs font-medium tracking-widest text-center title-font text-white-500">
+                                25 jan. 2015 Ton de Haan.
+                            </h2>
+
+
+                    </div>
+                </div>
+
+
+                <div class="overflow-hidden border-4 border-yellow-200 rounded-lg shadow-lg md:border-8">
+                    <img class="object-cover object-center w-full p-1 lg:h-64 md:h-48 rounded-3xl"
+                        x-intersect="$el.classList.add('fadeInUp')" src="/img/gedichten/lentestralen.jpg"
+                        alt="uitzicht">
+                    <div class="p-1">
+                        <h5
+                            class="p-1 font-serif font-thin text-center text-red-800 bg-yellow-200 rounded-sm title-font md:text-3xl">
+                            LENTESTRALEN</h5>
+                        <p class="mb-3 leading-relaxed">
+                        <h6 class="first-letter:text-white first-letter:font-bold first-letter:text-7xl md:text-2xl">
+
+                            <p>Vanuit het Loo-park lopend op weg</p>
+
+                            <p>Door een bos stralend van boom tot beukenheg.</p><br />
+
+                            <p>De temperatuur heerlijk om in te trainen.</p>
+
+                            <p>Helemaal als het lekker voelt met de benen.</p><br />
+
+                            <p>De Naald gepasseerd op weg naar Agovv</p>
+
+                            <p>met de rotonde richting de Wilslaan mee.</p><br />
+
+                            <p>Dan blik op oneindig voorbij het apenheul</p>
+
+                            <p>naar die Wilslaan die pittige, stijgende beul.</p><br />
+
+                            <p>Vanaf de Soerenseweg is het nog een kort stuk</p>
+
+                            <p>naar het Loo-park en voelt men met koffie het lopersgeluk.</p>
+                        </h6>
+                        </p>
+                        <div>
+                            <h2 class="mb-1 text-xs font-medium tracking-widest text-center title-font text-white-500">
+                                14 december 2015 Ton de Haan.</h2>
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden border-4 border-yellow-200 roundedshadow-lg d-lg md:border-8">
+                    <img class="object-cover object-center w-full p-1 lg:h-64 md:h-42 rounded-3xl"
+                        src="/img/gedichten/lentegroen.jpg" alt="lentegroen">
+                    <div>
+                        <h5
+                            class="p-1 font-serif font-thin text-center text-red-800 bg-yellow-200 rounded-sm title-font md:text-3xl">
+                            GROEN</h5>
+                        <p class="mb-3 leading-relaxed ">
+                        <h6 class="text-center first-letter:text-white first-letter:font-bold first-letter:text-7xl md:text-2xl">
+                           
+<p>Iemand kan groen door lentegroen lopen</p>
+
+<p>zonder ervaring te willen kopen.</p>
+
+<p>Maar deze al levend op te doen</p>
+
+<p>ls mens met ambitie en fatsoen.</p>a
+
+<p>De een laat de tijd vooral werken</p>
+
+<p>de ander doet een beroep op de sterken.</p>
+
+<p>het doel zal zijn uiteindelijk te ontgroenen</p>
+
+<p>en heel stevig te staan ook in oude schoenen.</p>
+
+
+                           </h6>
+                        <h2 class="mb-1 text-xs tracking-widest text-center font- medium title-font text-white-500">
+                            26 april 2015 Ton de Haan.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section id="extra">
+        <a class="mx-auto text-2xl font-bold text-center text-blue-800" href=" https://onzewingerdrunners.vercel.app"
+            target="_blank"></a>
+    </section>
+    <section id="programma"
+        class="w-full py-6 font-mono text-blue-700 bg-gradient-to-bl from-yellow-200 via-green-200 to-green-300 ">
+
+        <div
+            class="mt-6 font-serif text-4xl text-center text-sky-600 md:text-5xl">
+            PROGRAMMA</h1><br />            
+            <div class="container w-auto px-0">
+                <h1 class="py-2 font-sans text-center bg-transparent md:text-3xl sm:text-2xl md:text-red-500 "">
+         <a class="mx-2 text-2xl text-center " href=" https://datatables.net/">Responsive DataTables.net Table </a>
+                </h1>
+                <div id="recipients" class="p-8 mt-6 bg-white rounded shadow lg:mt-0">
+                    <table id="example" class="stripe hover"
+                        style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+                        <thead>
+                            <tr class="text-2xl ">
+                                <th data-priority="1">DATUM</th>
+                                <th data-priority="2">LOCATIE</th>
+                                <th data-priority="3">VERZORGING</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pt-12 font-mono text-2xl text-pink-800 border-4 border-red-500 cursor-pointer">
+                            <tr class="text-yellow-800 bg-transparent animate-bounce md:text-2xl ">       
+                                                 
+                                                            
+                                                               <td>2022/05/01</td>
+                                <td>Aardschoten</td>
+                                <td>Lia</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/05/08</td>
+                                <td>Loopark</td>
+                                <td>Cita</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/05/15</td>
+                                <td>Het Leesten</td>
+                                <td>Jacques</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/05/22</td>
+                                <td>Het Loopark</td>
+                                <td>Jeroen</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/05/29</td>
+                                <td>Wenum-Wiesel</td>
+                                <td>Linda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/06/05</td>
+                                <td> Hoog-Soeren</td>
+                                <td>Peter</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/06/12</td>
+                                <td>Loenen</td>
+                                <td>Henk</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/06/19</td>
+                                <td>Orderbos</td>
+                                <td>Cita</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/06/26</td>
+                                <td>Echoput</td>
+                                <td>Hans</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/07/03</td>
+                                <td>Loopark</td>
+                                <td>Esmeralda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/07/10</td>
+                                <td>Aardschoten</td>
+                                <td>Ton</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/07/17</td>
+                                <td>Wenum-Wiesel</td>
+                                <td>Lia</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/07/24</td>
+                                <td>Hoog-Soeren</td>
+                                <td>Jacques</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/07/31</td>
+                                <td>Loenen</td>
+                                <td>Jeroen</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/08/07</td>
+                                <td>Orderbos</td>
+                                <td>Linda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/08/14</td>
+                                <td>Echoput</td>
+                                <td>Peter</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/08/21</td>
+                                <td>Loopark</td>
+                                <td>Henk</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/08/28</td>
+                                <td>Wenum-Wiesel</td>
+                                <td>Cita</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/09/04</td>
+                                <td>Het Leesten</td>
+                                <td>Hans</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/09/11</td>
+                                <td>Hoog Soeren</td>
+                                <td>Esmeralda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/09/18</td>
+                                <td>Echoput</td>
+                                <td>Ton</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/09/25</td>
+                                <td>Aardschoten</td>
+                                <td>Cees</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/10/02</td>
+                                <td>Loenen</td>
+                                <td>Lia</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/10/09</td>
+                                <td>Het Leesten</td>
+                                <td>Jacques</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/10/16</td>
+                                <td>Echoput</td>
+                                <td>Jeroen</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/10/23</td>
+                                <td>Loopark</td>
+                                <td>Linda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/10/30</td>
+                                <td>Het Leesten</td>
+                                <td>Peter</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/11/06</td>
+                                <td>Kootwijk</td>
+                                <td>Henk</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/11/13</td>
+                                <td>Orderbos</td>
+                                <td>Cita</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/11/20</td>
+                                <td>Loenen</td>
+                                <td>Hans</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/11/27</td>
+                                <td>Aardschoten</td>
+                                <td>Esmeralda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/12/04</td>
+                                <td>Echoput</td>
+                                <td>Ton</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/12/11</td>
+                                <td>Loopark</td>
+                                <td>Cees</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/12/18</td>
+                                <td>Orderbos</td>
+                                <td>Lia</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2022/12/26</td>
+                                <td>Het Leesten</td>
+                                <td>Jacques</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/01/08</td>
+                                <td>Loenen</td>
+                                <td>Jeroen</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/01/15</td>
+                                <td>Loopark</td>
+                                <td>Linda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/01/22</td>
+                                <td>Kootwijk</td>
+                                <td>Peter</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/01/29</td>
+                                <td>Het Leesten</td>
+                                <td>Henk</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/02/05</td>
+                                <td>Aardschoten</td>
+                                <td>Cita</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/02/12</td>
+                                <td>Loenen</td>
+                                <td>Hans</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/02/19</td>
+                                <td>Orderbos</td>
+                                <td>Esmeralda</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/02/26</td>
+                                <td>Echoput</td>
+                                <td>Ton</td>
+                            </tr>
+                            <tr className="bg-transparent">
+                                <td>2023/03/05</td>
+                                <td>Wenum-Wiesel</td>
+                                <td>Lia</td>
+                            <tr className="bg-transparent">
+                                <td>2023/03/12</td>
+                                <td>Loopark</td>
+                                <td>Jacques</td>
+                            </tr>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <!--/Card-->
+            </div>
+        </div>
+    </section>
+    <section id="laatstenieuws" class="bg-gradient-to-r from-blue-300 via-green-200 to-yellow-300">
+        <div class="p-4 pt-10 text-center text-red-700 bg-blue-100 border-4 border-blue-300 rounded-xl md:text-3xl">
+            <h1 class="text-3xl text-center md:text-6xl">
+                Laatste Nieuws! 1 mei 2022.<br>
+                <p>Vandaag veel vakantiegedoe.</p> </h1>
+                <div>De Dag van de Arbeid (in België ook Feest van de Arbeid genoemd) is een feestdag van de socialistische, communistische en anarchistische arbeidersbeweging. De dag vindt in Nederland, België, Aruba, Curaçao en Suriname elk jaar op 1 mei plaats. Andere landen wijken soms af van deze datum. In Europa is 1 mei in bijna alle landen een officiële feestdag, op een paar landen na waaronder Nederland. Katholieken vieren op deze dag het feest van Sint-Jozef als arbeider.</div>
+                <div>Klein clubje: een pak koeken per persoon</div>
+                <div>Moederdagles gehad vanochtend: van Lia creatief idee en van Jacques een versje geleerd!!! </div>
+                <h2>Park rondom Jachtslot Het Oude Loo<br>
+Vanaf medio April 2022 zal jachtslot Het Oude Loo dienen als opvanglocatie voor vluchtelingen uit Oekraïne. De tuin rondom Het Oude Loo gaat vooralsnog niet open.<br>
+Lang geleden op 17 april 2016 : onze toppers maar de tijd vliegt.
+            </h2>
+                                   
+                               </div>
+
+        <div class="flex flex-wrap ">
+                        <img class="mx-auto border-2 border-blue-500 rounded-md "
+                src="/img/gedichten/linda.jpg" alt="linda">  
+                <img class="mx-auto border-2 border-blue-500 rounded-md "
+                src="/img/gedichten/esmeralda.jpg" alt="esmeralda">             
+                <img class="mx-auto border-2 border-blue-500 rounded-md "
+                src="/img/img/nieuws/nieuwsteroute.jpg" alt="aardschoten">    
+                    </div>
+        </div>
+        <div class="text-center">
+            <div class="p-2 text-6xl text-center text-red-600 border border-3 red-800">
+                <a href="https://www.gld.nl/nieuws/7630609/uniek-kijkje-in-paleis-het-loo-dit-is-het-resultaat-van-vier-jaar-verbouwen">Het Loo</a>
+            </div>
+            <div>
+            <a href=" http://www.koekjes.net/cgi-bin/gastenboek/bekijken.pl?denaam=wrunner&start=0#bottom">GEBRUIK/BEKIJK
+                ONS GASTENBOEK</a><br>
+        </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">
+        <div class="flex flex-col py-2 bg-blue-50 justify-items-center sm:py-1">
+            <div class="my-0 ">
+                <div>
+                    <svg class="w-24 h-24 mx-auto text-red-500 center" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+
+                <h2 class="text-2xl text-center text-red-500 md:font-semibold md:text-6xl">
+                    Uit ons verleden
+                </h2>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="multimedia"
+        class="content-center mx-auto bg-gradient-to-b from-yellow-100 via-yellow-300 to-yellow-500">
+
+        <div class="pb-4 mb-3">
+            <h1 class="pb-4 mb-3 font-serif text-2xl text-center text-red-400 md:text-6xl">
+                Het bekijken waard</h1>
+        </div>
+        <div class="container flex flex-row flex-wrap justify-between pb-4 mx-auto my-2">
+
+
+            <div class="oudnieuws " style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/giethoorn1/index.html" target="_blank">Giethoorn1</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/giethoorn2/index.html" target="_blank">Giethoorn2</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/Giethoorn3/index.html" target="_blank">Giethoorn3</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/Jubileum2008/index.html" target="_blank">Jubileum 2008</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/Jubileumfotos3/index.html" target="_blank">Jubileum 2008-3</a>
+            </div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/Aan de ijssel/index.html" target="_blank">Aan de IJssel</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/hetleesten/index.html" target="_blank">Het Leesten</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/hoog_soeren_2020/index.html" target="_blank">Hoog Soeren
+                    2017</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/kootwijk_oktober_2015/index.html" target="_blank">Kootwijk</a>
+            </div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/voorst/index.html" target="_blank">Voorst</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/voorst/index.html" target="_blank">Voorst</a></div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/paddestoelen/paddestoelen.html" target="_blank">Paddestoel 1</a>
+            </div>
+            <div class="oudnieuws" style="background-image: url(/img/multimedia.gif)"><a
+                    href="/multimedia/paddestoelen2/paddenstoelen2.html" target="_blank">Paddestoel 2</a>
+            </div>
+            <div class='flex flex-wrap gap-5 mx-auto justify-self-center'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uTcOh3F2ly4" frameborder="2"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>                
+            </div>
+    </section>
+    <section><h1 class="text-2xl font-semibold">
+       
+     </h1>
+     <div x-data="carousel()" class="relative">
+       <img
+         class="flex flex-col object-cover object-center mx-auto rounded-lg md:pb-4 md:h-96 sm:h-80 sm:pd-2 "
+         :src="images[selected]"
+         alt="mountains"
+       />
+ 
+       <button
+         @click="if (selected > 0 ) {selected -= 1} else { selected = images.length - 1 }"
+         class="absolute inset-y-0 left-0 px-2 my-[55%] h-full w-8 group hover:bg-gray-500 hover:bg-opacity-75 cursor-pointer"
+       >
+         <span class="hidden group-hover:block text-gray-50">
+           &larr;
+         </span>
+       </button>
+       
+       <div class="absolute bottom-0 flex justify-center w-full p-4 space-x-2">
+         <template x-for="(image,index) in images" :key="index">
+           <button
+             @click="selected = index"
+             :class="{'bg-gray-600': selected == index, 'bg-gray-200': selected != index}"
+             class="w-4 h-4 rounded-full hover:bg-gray-300 ring-2 ring-gray-300"
+           ></button>
+         </template>
+       </div>
+     </div>
+     <script>
+       const carousel = () => {
+         return {
+           selected: 0,
+           images: [
+             "./img/carousel/lijktme-een-oudgeval.jpg",
+             "./img/carousel/lui-nietlui.jpg",
+             "./img/carousel/natuurhoogsoeren.jpg",
+             "./img/carousel/nietteverleiden.jpg",
+             "./img/carousel/ondermoedersparaplu.jpg",
+             "./img/carousel/ons_zomerverblijf.jpg",
+             "./img/carousel/onze_toppers.jpg",
+             "./img/carousel/oranjerie3.jpg",
+             
+           ]
+         };
+       };
+     </script>
+     </section>
+   </div>
+       <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <!--/container-->
+</body>
+
+</html>
